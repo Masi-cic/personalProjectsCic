@@ -1,0 +1,78 @@
+BLOC 
+business logic Component
+
+bloc is a design pattern that helps segregate the business logic from the user interface, making the default state of your code cleaner, more manageable and testable 
+
+state management is the technique of managing the state of an application
+
+one of the key challenges in flutter apps is managing state - the information that the app needs to keep track of as users interact with it. 
+
+Bloc is a method of managing state and events in flutter applications 
+
+Bloc revolves around three core concepts:
+1. Events 
+2. States
+3. Streams 
+
+an event is triggered by the UI, like a button press, the bloc responds to this particular event by yielding a new state which is then consumed by the ui to reflect the changes 
+
+Basics of bloc
+-Events: Triggered by the user interface, events are the input for a BLoC. They can be things like user interactions or lifecycle events.
+- States: The output of a BLoC. The state represents a part of your app's state at a particular moment.
+- BLoC: The business logic component that receives events and produces states. It's where the business logic of your application resides.
+
+How the bloc pattern works 
+- user interactions : begins with a user interaction such as a button press 
+- Event dispatch : this interaction dispatches an event to the bloc 
+state
+- State Generation: The BLoC processes the event and yields a new state.
+- UI update : the UI listens to the bloc update and updates accordingly when a new state is emitted
+
+
+the above ensures that all business logic is separated from the UI code. 
+
+
+Streams - a stream is a sequence of asynchronous data. 
+think of a pipe with water flowing through it. the pipe is the stream and the water is the asynchronous data 
+
+
+
+
+Testing flutter apps
+
+automated testing falls into the below categories 
+- unit test : tests a single function, method or class 
+- widget test : tests a single widget 
+- integration test : tests a complete app or a large part of an app 
+
+Anatomy of a unit test 
+a unit test has 3 main components:
+ - setup 
+ - execution
+ - assertion 
+
+Setup - this phase involves setting up the necessary environment and dependancies for the unit test
+this may include creating instances of classes, initializing variables and configuring any required dependancies 
+
+
+
+NODE.JS & EXPRESS
+express is a framework that sits on top of Node.js's web server functionality to simplify its apis ]
+
+express is a part of MEAN stack, a full stack javascript solution used in building web applications 
+
+MongoDB 
+ExpressJS 
+AngularJS 
+NodeJS 
+
+
+the basic syntax for routes is 
+app.anyMethod(path, function)
+
+setting up GET 
+
+call back function receives request and response objects provided by express 
+
+request is the incoming request object containing client data and response is the response object used to send data back to the client 
+

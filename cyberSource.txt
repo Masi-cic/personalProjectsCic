@@ -1,0 +1,63 @@
+INTRODUCTION TO REST 
+
+REpresentational state transfer, is an architecture for developing web services,
+it enables communication between a client and server using HTTP protocols 
+stateless messaging is a loosely coupled connection between a client and server, where each message is self-contained. 
+this connection enables the client and server to communicate without first establishing a communication channel and without managing the state between systems 
+
+Key features 
+- client/server model: they are independent from each other, enabling portability and scalability 
+- stateless communication: each request is independent 
+- uniform interface:  architecture is simplified through uniform standards 
+
+COMPONENTS
+A REST message consists of the following four components 
+1. endpoint : is a URL that shows where and how to find the  resource on the internet 
+2. HTTP method: is the action performed by the resource 
+	POST 
+	GET
+	PATCH 
+	DELETE
+3. Headers: is a collection of fields and their associated values, it provides information about the message to the receiver.
+ we can think of it as metadata about the message 
+ it contains authentication information that indicates that the message is legitimate 
+4. Body: the request in json format 
+
+SECURE COMMUNICATION REQUIREMENTS 
+to ensure secure communications you must provide the following security measures :
+- sender authentication: a receiver needs to know that the message came from a trusted entity 
+- message encryption: prevent man in the middle attacks by encrypting before transmission and decryption once received 
+
+Secure communication options 
+you can choose to secure your communications using one of the two methods:
+1. JSON web token - these are digitally signed JSON objects
+2. HTTP Signature - 
+
+
+REST setup workflow 
+below are the steps to enable REST requests:
+1. choose JSON web token or HTTP Signature message security 
+2. sign up for a sandbox account 
+3. obtaining security keys: HTTP Signature message security uses a key pair, JWT message security uses a p12 certificate 
+4. configure messaging 
+
+
+Signing up for a sandbox account
+go through the whole process of creating an account 
+form this account you will be able to create your security certificates and test your implementations 
+
+OBTAINING A P12 certificate 
+a p12 and its private key are used with JSON web token message security 
+
+creating a p12 file 
+you can continue with this is you are using JSON web tokens to secure communication 
+1. payment configuration -> key management 
+2. click generate key 
+3. under REST APIs select REST - certificate and click generate key 
+4. download key 
+6. .p12 file is downloaded to your desktop 
+
+
+
+
+

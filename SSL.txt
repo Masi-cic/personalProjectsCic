@@ -1,0 +1,105 @@
+An SSL certificate is a digital certificate that can be used for authentication of a website and it creates a secure between client and web server 
+when a certificate is installed it makes the website from HTTP to HTTPS 
+
+working process of SSL certificate:
+it enables the encryption of data then it is sent to the server
+it has two keys, public and private
+
+data encrypted with the public key can be decrypted with a private key only.
+the web server that has the private key of the pair can understand the data 
+
+Data that SSL certificate contains:
+- Domain name of the website 
+- sub-domains 
+- issue data
+- expiration date 
+- SSL/TLS version (secure socket layer / transport layer security)
+- certificate authority information 
+- public key
+- certificate signature algorithm 
+
+what is the need?
+there are new attacks and data breaches and the growth of online transaction clients data is very vulnerable. 
+SSL certificates can ensure an encrypted connection between client and server 
+
+it can secure data as follows 
+- bank information 
+- login information 
+- credit/debit card details 
+- hospital records 
+- residential information 
+
+SSL builds trust in clients to share their personal information and doing their transactions on  the website 
+it is also preferred by search engines so it will show up in the search results 
+
+types of SSL certificates 
+- single-domain SSL certificates 
+- wildcard SSL certificates 
+- Multi-Domain SSL certificates 
+- Unified communications SSL certificate 
+
+types of SSL certificates validation levels 
+- Domain validated certificates (DV SSL)
+- Organization validated certificates (OV SSL)
+- Extended validated certificates (EV SSL) 
+
+How to acquire an SSL certificate 
+to acquire the valid certificate outside third-party certificate authorities (CA) are there 
+
+Digital Certificate creation 
+this process involves three parties 
+1. end user 
+2. registration authority 
+3. certificate authority 
+
+the registration authority acts as an intermediate between the end user and the CA, 
+when an end user requests for a digital certificate and the request goes to the request authority which then assists the CA to create the digital certificate 
+it also assist in day to day tasks of CA 
+
+Services of registration Authority 
+- Accepting and verifying the details of new users registration 
+- user key generation 
+- backups and recovery of key 
+- certificate cancellation 
+
+Steps for digital certificate creation:
+step-1: key generation is done by either user or registration authority, public key is sent to the registration authority and the private key is kept secret by user
+step-2: the registration authority registers the user 
+step-3: next is verification which is done by the RA, here the users credentials are being verified. it also checks that the user has the corresponding private key or not 
+
+step-4: details are sent to the CA by the RA. the CA creates the digital certificate and give it to users and also keeps a copy to itself 
+
+
+
+
+
+Create a self-signed SSL certificate for nginx in ubuntu 
+
+TLS and SSL are web protocols used to protect and encrypt traffic over a computer network 
+
+with TSL servers can send traffic safely between the server and clients 
+the certificate system also assists users in verifying the identity of the sites that they are connecting with 
+
+in this tutorial we will learn how to set up a self signed SSL certificate for use with an Nginx web server 
+
+
+first of all we have to have a non-root user configured with sudo privilages and a firewall enabled 
+we also need to have nginx web server installed 
+it is necessary to have a server blovk set up and it is necessary to test wether Nginx is able to encrypt connections using my self signed certificate 
+
+step 1: creating the ssl certificate 
+tsl/ssl certificate is a combination of private certificate and public key 
+the ssl key is kept secret on the server and it encrypts the content sent to cients 
+the SSL certificate is shared with anyone requesting the content and it is used to decrypt content signed by the associated SSL key 
+
+you can create a self signed key and certificate pair with openssl 
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+
+the command above will create  both a key file and a certificate 
+after running the command you will be asked a few questions about your server in order to embed the information correctly in the certificate 
+
+
+
+
+

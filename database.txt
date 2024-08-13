@@ -1,0 +1,70 @@
+password hashing 
+this is usually done in the backend 
+hashing transforms the password into a fixed length string of characters using a cryptographic hash function 
+this is an irreversible transformation that ensures that the original password cannot be easily deduced from the stored hash 
+
+hashing a password:
+code in hash_password.py
+
+
+database management system - technology of storing and retrieving user data with utmost efficiency 
+the basics of DBMS include 
+- architecture 
+data models 
+data schemas
+data independence
+E-R model
+relational model
+relational database design 
+storage and file structure 
+
+a modern DBMS has the following characteristics 
+- real world entity - uses real world entities(student) and attributes(age)
+- relation based tables - allows entities and relations among them to form tables 
+- isolation of data and application - 
+- less redundancy 
+- consistency 
+- query language 
+ACID properties 
+multiuser and concurrent access 
+multiple views 
+security 
+
+
+USERS 
+a typical DBMS has users with different rights and permissions 
+1. Administrators - 
+2. Designers 
+3. End users 
+
+ARCHITECTURE 
+the design of a DBMS depends on its architecture, it can be centralized or decentralized or hierarchical.
+
+the architecture of a DBMS can be seen as either single-tier or multi-tier 
+
+in a 1-tier architecture, the DBMS is the only entity where the user directly sits on the DBMS and uses it 
+
+in a 2-tier architecture, there must be an application through which the DBMS can be accessed 
+
+in a 3-tier architecture, this is the most common architecture where there is 3 levels. ie the UI, Application, database 
+
+DATA MODELS 
+define how the logical structure of a database is modeled.
+Data models are fundamental entities to introduce abstraction in a DBMS 
+
+entity relationship model 
+this model is based on the notion of real world entities and their attributes and relationships among them 
+
+relationships are mapped with entities in various ways (cardinalities)
+mapping cardinalities define the number of association between two entities 
+
+one to one
+one to many
+many to one
+many to many
+
+
+
+
+
+
